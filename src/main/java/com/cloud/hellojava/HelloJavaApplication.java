@@ -9,13 +9,16 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author Coder
  *
  */
+
 @SpringBootApplication
 public class HelloJavaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(HelloJavaApplication.class, args);
+		logMessage();
 	}
-	
-	//Very Important changes
 
+	private static void logMessage() {
+		System.out.println("The application started successfully");
+	}
 }
